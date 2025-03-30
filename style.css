@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #2c83eb;
+    --white-color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@ body {
     position: relative;
     max-width: 1200px;
     margin: 20px auto;
-    background: #fff;
+    background: var(--white-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -40,11 +45,11 @@ body {
 }
 
 .main-nav>li>a:hover {
-    color: #2c83eb;
+    color: var(--primary-color);
 }
 
 .main-nav>li:first-child>a {
-    background: #2c83eb;
+    background: var(--primary-color);
     color: white;
     border-radius: 5px 5px 0 0;
 }
@@ -58,13 +63,13 @@ body {
     right: 0;
     top: 100%;
     width: 1100px;
-    background: #fff;
+    background: var(--white-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 5px 5px;
     padding: 20px;
     display: none;
     z-index: 100;
-    grid-template-columns: 750px 300px;
+    grid-template-columns: 300px 750px;
     gap: 20px;
 }
 
@@ -80,7 +85,7 @@ body {
 }
 
 .mega-categories h3 {
-    color: #2c83eb;
+    color: var(--primary-color);
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px dashed #ddd;
@@ -106,7 +111,7 @@ body {
 .category-list li a:hover,
 .category-list li a.active {
     background: #f0f7ff;
-    color: #2c83eb;
+    color: var(--primary-color);
 }
 
 .mega-content {
@@ -135,7 +140,7 @@ body {
 }
 
 .subcategory-group h4 {
-    color: #2c83eb;
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 15px;
 }
@@ -159,7 +164,7 @@ body {
 }
 
 .subcategory-list li a:hover {
-    color: #2c83eb;
+    color: var(--primary-color);
     padding-right: 5px;
 }
 
@@ -169,7 +174,7 @@ body {
     right: 100%;
     top: 0;
     width: 200px;
-    background: #fff;
+    background: var(--white-color);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -183,6 +188,7 @@ body {
 
 .third-level li {
     margin-bottom: 5px;
+    list-style: none;
 }
 
 .third-level li a {
@@ -193,7 +199,7 @@ body {
 }
 
 .third-level li a:hover {
-    color: #2c83eb;
+    color: var(--primary-color);
     background: #f5f9ff;
 }
 
@@ -202,7 +208,7 @@ body {
     display: none;
     cursor: pointer;
     padding: 15px 20px;
-    background: #2c83eb;
+    background: var(--primary-color);
     color: white;
     border-radius: 5px 5px 0 0;
     font-weight: 500;
