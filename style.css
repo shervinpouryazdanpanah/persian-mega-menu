@@ -1,6 +1,7 @@
 :root {
     --primary-color: #2c83eb;
     --white-color: #fff;
+    --primary-light-color: #1a73e8;
 }
 
 * {
@@ -55,7 +56,7 @@ body {
 }
 
 .main-nav>li:first-child>a:hover {
-    background: #1a73e8;
+    background: var(--primary-light-color);
 }
 
 .mega-menu {
