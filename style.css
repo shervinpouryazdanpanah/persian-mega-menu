@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    direction: rtl;
+}
+
+.nav-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0 15px;
+}
+
+.main-nav>li {
+    position: relative;
+}
+
+.main-nav>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.main-nav>li>a:hover {
+    color: #2c83eb;
+}
+
+.main-nav>li:first-child>a {
+    background: #2c83eb;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.main-nav>li:first-child>a:hover {
+    background: #1a73e8;
+}
+
+.mega-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 1100px;
+    /* Increased width */
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    display: none;
+    z-index: 100;
+    grid-template-columns: 750px 300px;
+    /* Adjusted proportions */
+    gap: 20px;
+}
+
+.main-nav>li:first-child:hover .mega-menu {
+    display: grid;
+}
+
+.mega-categories {
+    border-left: 1px solid #eee;
+    padding-right: 20px;
+    max-height: 400px;
+    /* Limit height */
+    overflow-y: auto;
+    /* Enable scrolling */
+}
+
+.mega-categories h3 {
+    color: #2c83eb;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.category-list li a {
+    display: block;
+    padding: 8px 10px;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.category-list li a:hover,
+.category-list li a.active {
+    background: #f0f7ff;
+    color: #2c83eb;
+}
+
+.mega-content {
+    padding-left: 20px;
+}
+
+.mega-content h3 {
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.subcategories {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.subcategories.active {
+    display: grid;
+}
+
+.subcategory-group h4 {
+    color: #2c83eb;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.subcategory-list {
+    list-style: none;
+}
+
+.subcategory-list li {
+    margin-bottom: 8px;
+}
+
+.subcategory-list li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.subcategory-list li a:hover {
+    color: #2c83eb;
+    padding-right: 5px;
+}
+
+.third-level {
+    display: none;
+    margin-top: 5px;
+    padding-right: 10px;
+    border-right: 2px solid #eee;
+}
+
+.subcategory-list li:hover .third-level {
+    display: block;
+}
+
+.third-level li a {
+    font-size: 13px;
+    color: #888;
+}
+
+.third-level li a:hover {
+    color: #2c83eb;
+}
