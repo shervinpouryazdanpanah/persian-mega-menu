@@ -57,4 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  document
+    .querySelectorAll("div.mega-menu-wrapper.nav-container > ul.main-nav > li")
+    .forEach(function (li) {
+      li.addEventListener("mouseenter", function () {
+        const icon = li.querySelector(".chevron-down");
+        if (icon) {
+          icon.classList.remove("chevron-down");
+          icon.classList.add("chevron-up");
+        }
+      });
+
+      li.addEventListener("mouseleave", function () {
+        const icon = li.querySelector(".chevron-up");
+        if (icon) {
+          icon.classList.remove("chevron-up");
+          icon.classList.add("chevron-down");
+        }
+      });
+    });
 });

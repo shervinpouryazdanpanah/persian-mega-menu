@@ -318,3 +318,15 @@ body {
         padding: 10px;
     }
 }
+
+.chevron-up::before {
+    content: "\2B9D";
+    /* Upward triangle */
+    display: inline-block;
+}
+
+.chevron-down::before {
+    content: "\2B9F";
+    /* Downward triangle */
+    display: inline-block;
+}
