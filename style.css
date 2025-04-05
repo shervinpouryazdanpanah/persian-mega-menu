@@ -119,11 +119,25 @@ body {
     padding-left: 20px;
 }
 
+.mega-content h3 a,
 .mega-content h3 {
-    color: #333;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .mega-content h3 {
+        display: block;
+    }
+
+    .mega-content h3 a {
+        text-decoration: none;
+        display: block;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
 }
 
 .subcategories {
